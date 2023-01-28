@@ -1,5 +1,34 @@
-// styles.scss
-@use 'atoms'; 
-@use 'molecules';
-@use 'organisms' as o;
-@use 'variables';
+@use "variables" as *; //this puts all the variables in the global namespace.
+// @use 'atoms';
+//@use 'molecules';
+//@use 'organisms' as o;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: $background-color;
+  padding: 5%;
+}
+$primary:#191716;
+$text-dark:white;
+$head-color:#E54ED0;
+$fonts-body: 'Montserrat', sans-serif;
+$main_title: 'Orbitron', sans-serif;
+body {
+  font-family: $fonts-body;
+  font-size: 20px;
+  color: $text-dark;
+  background-color: $primary;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-family: $main_title;
+  color: $head-color;
+  font-size: 40px;
+  margin: 0;
+  padding: 1em;
+}
