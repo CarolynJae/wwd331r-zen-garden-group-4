@@ -72,6 +72,7 @@ section {
   border: 1px solid;
   margin: 0.5em;
   padding: 1em;
+ 
 }
 .uppercase {
   @include atoms.uppercase;
@@ -80,6 +81,7 @@ section {
 }
 .uppercase-light {
   @include atoms.uppercase($text-light);
+  font-family: "Montserrat", sans-serif;
 }
 
 
@@ -87,8 +89,19 @@ h4 {
   font-family: $fonts-h3;
  font-size: 30px;
 }
-
+h2 {
+  color: white;
+  font-family: $fonts-h3;
+}
+ 
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+}
+h1 {
+background-color:$accent1;
+font-family: $fonts-h3;
+}
+a {
+  color: $accent3;
 }
