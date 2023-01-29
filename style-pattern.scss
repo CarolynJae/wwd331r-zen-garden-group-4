@@ -2,15 +2,7 @@
 @use 'atoms';
 //@use 'molecules';
 //@use 'organisms' as o;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-$fonts-h3: 'Orbitron', sans-serif;
-$primary1:#E54ED0;
-$accent1:#0000BA;
-$accent2:#FFD062;
-$accent3:#44008B;
-$text-dark:#191716;
-$fonts-body: 'Montserrat', sans-serif;
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +10,6 @@ html {
   background-color: $background-color;
   padding: 5%;
 }
- 
 
 body {
   font-family: $fonts-body;
@@ -39,7 +30,6 @@ section {
   > h3 {
     width: 100%;
     flex: 1 0 100%;
-   
   }
   > figure {
     margin: 0;
@@ -51,19 +41,14 @@ section {
   height: 100px;
   border: 1px solid;
 }
-.primary1 {
-  background-color: $primary1;
+.primary {
+  background-color: $primary;
 }
 .accent1 {
   background-color: $accent1;
 }
 .accent2 {
   background-color: $accent2;
-}
-.accent3 {
-  background-color: $accent3;
-
- 
 }
 .text-dark {
   background-color: $text-dark;
@@ -72,36 +57,10 @@ section {
   border: 1px solid;
   margin: 0.5em;
   padding: 1em;
- 
 }
 .uppercase {
   @include atoms.uppercase;
-  font-family: $fonts-h3;
-
 }
 .uppercase-light {
   @include atoms.uppercase($text-light);
-  font-family: "Montserrat", sans-serif;
-}
-
-
-h4 {
-  font-family: $fonts-h3;
- font-size: 30px;
-}
-h2 {
-  color: white;
-  font-family: $fonts-h3;
-}
- 
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-}
-h1 {
-background-color:$accent1;
-font-family: $fonts-h3;
-}
-a {
-  color: $accent3;
 }
