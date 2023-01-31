@@ -2,35 +2,26 @@
 @use 'atoms';
 //@use 'molecules';
 //@use 'organisms' as o;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-$fonts-h3: 'Orbitron', sans-serif;
-$primary1:#E54ED0;
-$accent1:#0000BA;
-$accent2:#FFD062;
-$accent3:#44008B;
-$text-dark:#191716;
-$fonts-body: 'Montserrat', sans-serif;
+
 * {
   box-sizing: border-box;
 }
 html {
-  background-color: $background-color;
+  background-image: linear-gradient(to top left, $text-dark, $primary1, $accent1, $accent2);
   padding: 5%;
 }
- 
 
 body {
-  font-family: $fonts-body;
-  font-size: 85%;
   color: $text-dark;
-  background-color: $primary;
-  margin: 0;
-  padding: 1em;
+  background-color: $accent3;
+  margin: 100px;
+  padding: 2em;
 }
 
 section {
-  background-color: white;
+  background-color: $section-bg;
   padding: 1em;
   margin: 1em;
 }
@@ -43,14 +34,16 @@ section {
   }
   > figure {
     margin: 0;
-    flex: 1 1 25%;
+    flex: 1 1 20%;
   }
 }
+
 .swatch {
   width: 100%;
   height: 100px;
   border: 1px solid;
 }
+
 .primary1 {
   background-color: $primary1;
 }
@@ -62,7 +55,6 @@ section {
 }
 .accent3 {
   background-color: $accent3;
-
  
 }
 .text-dark {
@@ -80,8 +72,10 @@ section {
 
 }
 .uppercase-light {
-  @include atoms.uppercase($text-light);
-  font-family: "Montserrat", sans-serif;
+  @include atoms.uppercase();
+  color: $text-light;
+  font-family: $fonts-body;
+  padding: 2em;
 }
 
 
@@ -92,16 +86,17 @@ h4 {
 h2 {
   color: white;
   font-family: $fonts-h3;
+  font-size: 50pt;
 }
  
 p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-family: $fonts-body;
+  font-size: 25px;
 }
 h1 {
-background-color:$accent1;
-font-family: $fonts-h3;
+  font-family: $fonts-h3;
+  font-size: 35pt;
 }
 a {
-  color: $accent3;
+  color: $accent1;
 }

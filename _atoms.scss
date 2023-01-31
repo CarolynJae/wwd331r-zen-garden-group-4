@@ -1,0 +1,16 @@
+
+$axis: row;
+$wrap: wrap;
+
+@mixin set-flex() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+}
+
+@mixin uppercase() {
+    text-transform: uppercase;
+}
