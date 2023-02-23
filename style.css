@@ -1,19 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
-* {
-  box-sizing: border-box;
+html {
+  background-color: black;
+  padding: 6%;
 }
 
-html {
-  background-color: #daede2;
-  padding: 5%;
+.page-wrapper {
+  margin-top: auto;
+  eight: 800px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 700px auto;
+  align-items: top;
+  margin-top: 0px;
+  height: 390px;
+}
+
+.intro {
+  background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 200px;
+  margin-top: 0px;
+}
+
+#zen-intro {
+  background-position: 2px 105px;
+  height: 400px;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  color: white;
-  background-color: #191716;
+  color: #191716;
+  background-color: white;
   margin: 0;
   padding: 1em;
 }
@@ -21,7 +43,7 @@ body {
 h1 {
   font-family: "Orbitron", sans-serif;
   color: #E54ED0;
-  font-size: 40px;
+  font-size: 55px;
   margin: 0;
   padding: 1em;
 }
