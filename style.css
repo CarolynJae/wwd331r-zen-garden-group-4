@@ -6,6 +6,7 @@ html {
 
 .page-wrapper {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   min-height: 200px;
   grid-template-columns: repeat(2, 50%);
   gap: 10px;
