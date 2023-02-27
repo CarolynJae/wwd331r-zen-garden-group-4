@@ -29,54 +29,51 @@ h1 {
   padding: 1em;
 }
 
-header{
-  position:relative;
-  width: 100%;
-  box-sizing:border-box;
-  padding-left:10px;
-  padding-right:10px;
-  background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
-  background-repeat: no-repeat;
-  background-size: 1800px 700px;
-  max-height: 830px;
-  margin-top: 0px; 
-  text-align: right;
-    h2 {
-      margin-top: 0px;
-      color: $text-dark;
-    }
-}
+
 .intro {
   display: grid;
   grid-template-columns: auto;
   grid-row-end: span 3;
   
+  header{
+    position:relative;
+    width: 100%;
+    box-sizing:border-box;
+    padding-left:10px;
+    padding-right:10px;
+    background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
+    background-repeat: no-repeat;
+    background-size: 1800px 700px;
+    max-height: 830px;
+    margin-top: 0px; 
+    text-align: right;
+      h2 {
+        margin-top: 0px;
+        color: $text-dark;
+      }
+  }
+  .summary {
+    background-color: bisque;
   
-}
- 
-.summary {
-  display: grid;
-  grid-template-columns: auto;
-   
-  background-color: bisque;
-
-  
-  } 
+    
+    } 
+    
 #zen-summary{
   
   padding-top:1px;
   padding-left: 10px;
-  width:70%;
+  width:99%;
   float:right;
+  margin-top: 0px; 
 }
 #zen-summary p:first-of-type{
   float:left;
-  width:80%;
-  font-size:0.7em;
+  width:60%;
+  font-size:0.9em;
 }
 #zen-summary p:last-of-type{
   float:right;
-  margin-right:54%;
+  margin-right:0%;
   font-size:0.9em;
   padding:9px;
   box-sizing:border-box;
@@ -87,6 +84,9 @@ header{
   color:#FFFFFF;
   text-decoration: none; 
 }
+}
+ 
+
 
 
 

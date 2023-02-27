@@ -21,7 +21,12 @@ h1 {
   padding: 1em;
 }
 
-header {
+.intro {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-end: span 3;
+}
+.intro header {
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -34,46 +39,34 @@ header {
   margin-top: 0px;
   text-align: right;
 }
-header h2 {
+.intro header h2 {
   margin-top: 0px;
   color: white;
 }
-
-.intro {
-  display: grid;
-  grid-template-columns: auto;
-  grid-row-end: span 3;
-}
-
-.summary {
-  display: grid;
-  grid-template-columns: auto;
+.intro .summary {
   background-color: bisque;
 }
-
-#zen-summary {
+.intro #zen-summary {
   padding-top: 1px;
   padding-left: 10px;
-  width: 70%;
+  width: 99%;
   float: right;
+  margin-top: 0px;
 }
-
-#zen-summary p:first-of-type {
+.intro #zen-summary p:first-of-type {
   float: left;
-  width: 80%;
-  font-size: 0.7em;
+  width: 60%;
+  font-size: 0.9em;
 }
-
-#zen-summary p:last-of-type {
+.intro #zen-summary p:last-of-type {
   float: right;
-  margin-right: 54%;
+  margin-right: 0%;
   font-size: 0.9em;
   padding: 9px;
   box-sizing: border-box;
   background-color: #E54ED0;
 }
-
-#zen-summary p:last-of-type a {
+.intro #zen-summary p:last-of-type a {
   color: #FFFFFF;
   text-decoration: none;
 }
