@@ -1,39 +1,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
 html {
   background-color: black;
   padding: 6%;
  } 
 
-
  
-.page-wrapper {
-  display: grid;
-  min-height: 200px;  
-  grid-template-columns: repeat(2, 50%);
-  gap: 10px;
-  justify-items: start;
-  align-items: start;
-  
- justify-content: end;
-}
- 
-.intro {
-  background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
-  background-repeat: no-repeat;
-  width: 955px;
-  max-height: 330px;
-  margin-top: 0px;
-  min-height: 200px;
-}
-
-#zen-intro  { background-position: 2px 105px; 
-  height: 400px;}
-
- 
-
-     
-
 $background-color1:black;
 $primary:#191716;
 $text-dark:white;
@@ -47,6 +18,7 @@ body {
   background-color: $text-dark;
   margin: 0;
   padding: 1em;
+  
 }
 
 h1 {
@@ -56,4 +28,103 @@ h1 {
   margin: 0;
   padding: 1em;
 }
+
+header{
+  position:relative;
+  width: 100%;
+  box-sizing:border-box;
+  padding-left:10px;
+  padding-right:10px;
+  background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
+  background-repeat: no-repeat;
+  background-size: 1800px 700px;
+  max-height: 830px;
+  margin-top: 0px; 
+  text-align: right;
+    h2 {
+      margin-top: 0px;
+      color: $text-dark;
+    }
+}
+.intro {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-end: span 3;
+  
+  
+}
  
+.summary {
+  display: grid;
+  grid-template-columns: auto;
+   
+  background-color: bisque;
+
+  
+  } 
+#zen-summary{
+  
+  padding-top:1px;
+  padding-left: 10px;
+  width:70%;
+  float:right;
+}
+#zen-summary p:first-of-type{
+  float:left;
+  width:80%;
+  font-size:0.7em;
+}
+#zen-summary p:last-of-type{
+  float:right;
+  margin-right:54%;
+  font-size:0.9em;
+  padding:9px;
+  box-sizing:border-box;
+  background-color:$head-color;
+  
+}
+#zen-summary p:last-of-type a{
+  color:#FFFFFF;
+  text-decoration: none; 
+}
+
+
+
+.preamble {
+  grid-column: 1/1;
+  
+}
+ 
+#zen-supporting {
+  grid-column: 2/5;
+  display: grid;
+
+}
+
+.explanation {
+  grid-column: 3/4;
+  margin-top: -75px;
+
+}
+
+.participation {
+  grid-row: 1;
+  grid-column: 1/3;
+  
+}
+
+.benefits {
+  grid-column: 3/4;
+
+}
+
+.requirements,
+footer {
+  grid-column: 1/4;
+
+}
+.design-selection,
+.design-archives,
+.zen-resources {
+  grid-column: 1/2;
+}
