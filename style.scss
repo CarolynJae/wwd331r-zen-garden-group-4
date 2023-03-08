@@ -24,11 +24,32 @@ body {
 h1 {
   font-family: $main_title;
   color: $head-color;
-  font-size: 55px;
+  font-size: 75px;
   margin: 0;
-  padding: 1em;
-}
-
+  padding: 1em;  
+  white-space: nowrap;
+  overflow: hidden;    
+  }
+  /* Animation */
+  h1 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 300ms steps(29,end) infinite;
+  }
+  /* text animation */
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 95.5%;}
+  }
+ 
+  h2 {
+    font-family: $main_title;
+    color: $text-dark;
+    font-size: 25px;
+  
+    white-space: nowrap;
+    overflow: hidden;  
+    margin-top: 80px;  
+    }
 
 .intro {
   display: grid;
@@ -86,15 +107,19 @@ h1 {
   text-decoration: none; 
 }
 
+
 }
-.preamble {
+
+.preamble, #zen-preamble {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 80px;
   margin-top: 10px;
   margin-left: 0px;
   margin-bottom: 10px;
   width: 50%;
+
 }
+
 
 #zen-supporting {
   grid-column: 2/5;
@@ -111,7 +136,7 @@ h1 {
 }
 
 .participation {
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 1/2;
   margin-top: 10px;
   margin-left: 0px;
@@ -126,7 +151,7 @@ h1 {
   height: 210px;
 }
 .requirements {
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1/2;
   margin-top: 10px;
   margin-left: 0px;
