@@ -134,7 +134,7 @@ h1 {
 
 }
 
-.preamble:after {
+.preamble:before {
   content: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   display: inline-block;
   transform: scale(.8);
@@ -160,7 +160,7 @@ h1 {
 }
 
 .participation {
-  grid-row: 3;
+  grid-row: 2;
   grid-column: 1/2;
   margin-top: 10px;
   margin-left: 0px;
@@ -176,7 +176,7 @@ h1 {
  
 }
 .requirements {
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 1/2;
   margin-top: 10px;
   margin-left: 0px;
