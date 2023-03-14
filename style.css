@@ -34,7 +34,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 95.5%;
+    width: 92.5%;
   }
 }
 h2 {
@@ -87,7 +87,7 @@ h3::before, h3::after {
 .intro #zen-summary {
   padding-top: 1px;
   padding-left: 10px;
-  width: 99.4%;
+  width: 99.1%;
   float: right;
   margin-top: 0px;
 }
@@ -120,8 +120,10 @@ h3::before, h3::after {
 
 .preamble:before {
   content: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-  display: inline-block;
-  transform: scale(0.8);
+  display: block;
+  width: 380px;
+  height: 300px;
+  overflow: hidden;
 }
 
 #zen-supporting {
@@ -129,18 +131,30 @@ h3::before, h3::after {
   display: grid;
 }
 
-.explanation {
+.sidebar {
+  position: absolute;
+  top: 458px;
+  left: 540px;
+  right: 5px;
+  margin: 10px;
+  margin-top: 0px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  width: 38%;
+}
+
+.requirements {
   grid-column: 3/4;
   grid-row: 1;
-  width: 90%;
+  width: 70%;
 }
 
 .participation {
   grid-row: 2;
   grid-column: 1/2;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: 0px;
-  margin-right: 30px;
+  margin-right: 0px;
   margin-bottom: 10px;
   width: 85%;
 }
@@ -151,26 +165,14 @@ h3::before, h3::after {
   width: 90%;
 }
 
-.requirements {
+.explanation {
   grid-row: 1;
   grid-column: 1/2;
   margin-top: 10px;
   margin-left: 0px;
   margin-right: 30px;
   margin-bottom: 10px;
-  width: 80%;
-}
-
-.sidebar {
-  position: absolute;
-  top: 550px;
-  left: 1280px;
-  right: 5px;
-  margin: 10px;
-  margin-top: 0px;
-  margin-left: 30px;
-  margin-bottom: 0px;
-  width: 38%;
+  width: 90%;
 }
 
 .design-selection {
