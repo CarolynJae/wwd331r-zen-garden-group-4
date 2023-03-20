@@ -14,8 +14,8 @@ $main_title: 'Orbitron', sans-serif;
 html {
   z-index: 1;
   background: linear-gradient(-60deg, $background-color1, $background-color1, $primary, $bg-color2, $bg-color3, $bg-color4, $bg-color5, $bg-color4, $bg-color3, $bg-color2, $primary, $background-color1, $background-color1);
-  padding: 8%;
-  animation: bganimate 15s ease infinite;
+  padding: 5%;
+  animation: bganimate 20s ease infinite;
   background-size: 500% 500%;
 }
 
@@ -29,8 +29,9 @@ body {
   font-size: 20px;
   color: $primary;
   background-color: $text-dark;
-  margin: 0;
+  margin: auto;
   padding: 1em;
+  max-width: 2200px;
 }
 
 h1 {
