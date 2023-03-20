@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-html {
-  background-color: black;
-  padding: 6%;
- } 
 
- 
 $background-color1:black;
+$bg-color2:#44008B;
+$bg-color3:#0000BA;
+$bg-color4:#E54ED0;
+$bg-color5:#ffd062;
 $primary:#191716;
 $text-dark:white;
 $head-color:#E54ED0;
 $fonts-body: 'Montserrat', sans-serif;
 $main_title: 'Orbitron', sans-serif;
+
+html {
+  z-index: 1;
+  background: linear-gradient(-60deg, $background-color1, $background-color1, $primary, $bg-color2, $bg-color3, $bg-color4, $bg-color5, $bg-color4, $bg-color3, $bg-color2, $primary, $background-color1, $background-color1);
+  padding: 8%;
+  animation: bganimate 15s ease infinite;
+  background-size: 500% 500%;
+}
+
+@keyframes bganimate {
+  0% { background-position: 0 50%}
+  100% { background-position: 100% 50%}
+}
+
 body {
   font-family: $fonts-body;
   font-size: 20px;
@@ -18,7 +31,6 @@ body {
   background-color: $text-dark;
   margin: 0;
   padding: 1em;
-  
 }
 
 h1 {
@@ -36,9 +48,9 @@ h1 {
                animated-cursor 300ms steps(29,end) infinite;
   }
   /* text animation */
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 92.5%;}
+  @keyframes animated-text {
+    from {width: 0;}
+    to {width: 92.5%;}
   }
  
   h2 {
@@ -79,8 +91,6 @@ h1 {
     background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
     background-repeat: no-repeat;
     background-size: 2200px 700px;
-    max-height: 830px;
-    margin-top: 0px; 
     text-align: right;
       h2 {
         margin-top: 0px;

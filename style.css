@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
 html {
-  background-color: black;
-  padding: 6%;
+  z-index: 1;
+  background: linear-gradient(-60deg, black, black, #191716, #44008B, #0000BA, #E54ED0, #ffd062, #E54ED0, #0000BA, #44008B, #191716, black, black);
+  padding: 8%;
+  animation: bganimate 15s ease infinite;
+  background-size: 500% 500%;
 }
 
+@keyframes bganimate {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -73,8 +84,6 @@ h3::before, h3::after {
   background: url(https://as1.ftcdn.net/v2/jpg/03/20/56/32/1000_F_320563285_TOPF2MXlnMNGbKO0JhID1IgUe23rW0ep.jpg);
   background-repeat: no-repeat;
   background-size: 2200px 700px;
-  max-height: 830px;
-  margin-top: 0px;
   text-align: right;
 }
 .intro header h2 {
