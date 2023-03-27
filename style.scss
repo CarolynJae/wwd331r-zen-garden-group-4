@@ -43,6 +43,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;    
   }
+  
   /* Animation */
   h1 {
     animation: animated-text 4s steps(29,end) 1s 1 normal both,
@@ -57,8 +58,7 @@ h1 {
   h2 {
     font-family: $main_title;
     color: $text-dark;
-    font-size: 25px;
-  
+    font-size: 25px;  
     white-space: nowrap;
     overflow: hidden;  
     margin-top: 80px;  
@@ -78,13 +78,14 @@ h1 {
       border-top: 8px double;
     }
 
-.intro {
-  display: grid;
-  grid-template-columns: auto;
- 
+  .intro {
+      display: grid;
+      grid-template-columns: auto;
+    }
   
+
   header{
-    position:relative;
+    position: relative;
     width: 100%;
     box-sizing:border-box;
     padding-left:10px;
@@ -93,161 +94,144 @@ h1 {
     background-repeat: no-repeat;
     background-size: 2200px 700px;
     text-align: right;
+
       h2 {
         margin-top: 0px;
         color: $text-dark;
       }
   }
   .summary {
-    background-color: bisque;
-    
-  
-    
+    background-color: bisque;    
     } 
     
-#zen-summary{
-  
+#zen-summary{  
   padding-top:1px;
   padding-left: 10px;
   width:99.1%;
   float:right;
   margin-top: 0px; 
 }
+
 #zen-summary p:first-of-type{
   float:left;
   width:60%;
   font-size:0.9em;
 }
-#zen-summary p:last-of-type{
+
+#zen-summary p:last-of-type {
   float:right;
   margin-right:0%;
   font-size:0.9em;
   padding:9px;
   box-sizing:border-box;
   background-color:$head-color;
-  
-}
-#zen-summary p:last-of-type a{
+  }
+
+#zen-summary p:last-of-type a {
   color:#FFFFFF;
   text-decoration: none; 
 }
 
-
-}
-
-.preamble, #zen-preamble {
-  display: inline-block;
+.preamble, #zen-preamble {  
+  display: inline;
   margin-right: 80px;
   margin-top: 10px;
   margin-left: 0px;
   margin-bottom: 10px;
   width: 44%;
-
 }
 
 .preamble:before {
   content: url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
-  display: block;
   width: 380px;
   height: 300px;
-  overflow: hidden;
-
-  
+  display: inline;
+  overflow: hidden; 
 }
 
-
-
 #zen-supporting {
-  grid-column: 2/5;
-  display: grid;
-
+  display: grid;  
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 5;
+  grid-gap: 40px;
 }
 
 .sidebar{   
   position: absolute;
-  top: 458px; left: 540px;
+  top: 958px; 
+  left: 840px;
   right: 5px;
   margin: 10px;
   margin-top: 0px;
   margin-left: 30px;   
   margin-bottom: 0px;
-  width: 38%;
+  width: 380px;
  
- 
-}
+ }
 
 .requirements {
-  grid-column: 3/4;
-  grid-row: 1;
-   
-  width: 70%;
-  
+  grid-column: 2;
+  grid-row: 2/5;
+  width: 380px;
 }
 
 .participation {
-  grid-row: 2;
-  grid-column: 1/2;
+  grid-column: 1;
+  grid-row: 2/4;
   margin-top: 0px;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 10px;
-  width: 85%;
+  width: 380px;
 }
 
 .benefits {
-  grid-column: 3/4;
-  grid-row: 2;
-  width: 90%;
- 
+  width: 380px;
+  grid-column: 1;
+  grid-row: 4/5;
 }
+
 .explanation  {
-  grid-row: 1;
-  grid-column: 1/2;
+  grid-column: 1;
+  grid-row: 1/2;
   margin-top: 10px;
   margin-left: 0px;
   margin-right: 30px;
   margin-bottom: 10px;
-  width: 90%;
+  width: 380px;
 }
-
 
 .design-selection {
   background-color: bisque;
-  
-
-  
- 
-#design-selection{
-  
+   
+#design-selection{  
   padding-top:1px;
-  padding-left: 10px;
+  padding-left: 1px;
   width:35%;
   float:right;
   margin-top: 0px; 
 }
+
 #design-selection p:first-of-type{
   float:left;
   width:35%;
   font-size:0.9em;
 }
+
 #design-selection p:last-of-type{
   float:right;
   margin-right:0%;
   font-size:0.9em;
   padding:9px;
   box-sizing:border-box;
-  background-color:$head-color;
-  
+  background-color:$head-color;  
 }
+
 #design-selection p:last-of-type a{
   color:#FFFFFF;
   text-decoration: none; 
 }
+
 } 
 
-footer {
-   
-  grid-column: 1/4;
-  grid-row: 5;
-  
-}
+
