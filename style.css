@@ -49,7 +49,6 @@ h1 {
     width: 92.5%;
   }
 }
-
 h2 {
   font-family: "Orbitron", sans-serif;
   color: white;
@@ -78,7 +77,7 @@ h3::before, h3::after {
   grid-template-columns: auto;
 }
 
-.intro header {
+header {
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -89,17 +88,16 @@ h3::before, h3::after {
   background-size: 2200px 700px;
   text-align: right;
 }
-
-.intro header h2 {
+header h2 {
   margin-top: 0px;
   color: white;
 }
 
-.intro .summary {
+.summary {
   background-color: bisque;
 }
 
-.intro #zen-summary {
+#zen-summary {
   padding-top: 1px;
   padding-left: 10px;
   width: 99.1%;
@@ -107,13 +105,13 @@ h3::before, h3::after {
   margin-top: 0px;
 }
 
-.intro #zen-summary p:first-of-type {
+#zen-summary p:first-of-type {
   float: left;
   width: 60%;
   font-size: 0.9em;
 }
 
-.intro #zen-summary p:last-of-type {
+#zen-summary p:last-of-type {
   float: right;
   margin-right: 0%;
   font-size: 0.9em;
@@ -122,13 +120,13 @@ h3::before, h3::after {
   background-color: #E54ED0;
 }
 
-.intro #zen-summary p:last-of-type a {
+#zen-summary p:last-of-type a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
 .preamble, #zen-preamble {
-  display: inline-block;
+  display: inline;
   margin-right: 80px;
   margin-top: 10px;
   margin-left: 0px;
@@ -138,73 +136,78 @@ h3::before, h3::after {
 
 .preamble:before {
   content: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-  display: block;
   width: 380px;
   height: 300px;
+  display: inline;
   overflow: hidden;
 }
 
 #zen-supporting {
-  display: grid;  
-  grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 400px 400px;
   grid-template-rows: 5;
-  grid-gap: 80px;
+  grid-gap: 40px;
 }
 
 .sidebar {
   position: absolute;
-  top: 780px; 
-  left: 680px;
+  top: 958px;
+  left: 840px;
   right: 5px;
   margin: 10px;
   margin-top: 0px;
   margin-left: 30px;
   margin-bottom: 0px;
-  width: 38%;
+  width: 380px;
 }
 
 .requirements {
   grid-column: 2;
   grid-row: 2/5;
-  margin: 20px;
+  width: 380px;
 }
 
 .participation {
   grid-column: 1;
   grid-row: 2/4;
-  margin: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  width: 380px;
 }
 
 .benefits {
+  width: 380px;
   grid-column: 1;
   grid-row: 4/5;
-  margin: 20px;
 }
 
-.explanation  {
+.explanation {
   grid-column: 1;
-  grid-row: 1/2;  
-  margin: 20px;
+  grid-row: 1/2;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 380px;
 }
 
 .design-selection {
   background-color: bisque;
 }
-
 .design-selection #design-selection {
   padding-top: 1px;
-  padding-left: 10px;
+  padding-left: 1px;
   width: 35%;
   float: right;
   margin-top: 0px;
 }
-
 .design-selection #design-selection p:first-of-type {
   float: left;
   width: 35%;
   font-size: 0.9em;
 }
-
 .design-selection #design-selection p:last-of-type {
   float: right;
   margin-right: 0%;
@@ -213,15 +216,9 @@ h3::before, h3::after {
   box-sizing: border-box;
   background-color: #E54ED0;
 }
-
 .design-selection #design-selection p:last-of-type a {
   color: #FFFFFF;
   text-decoration: none;
-}
-
-footer {   
-  grid-column: 1/3;
-  grid-row: 6;
 }
 
 /*# sourceMappingURL=style.css.map */
